@@ -1,8 +1,9 @@
+from typing import Dict
+
 from django.contrib import admin
+from django.http import HttpRequest
 from django.urls import path
 from ninja import NinjaAPI
-from typing import Dict
-from django.http import HttpRequest
 
 api = NinjaAPI()
 
@@ -17,6 +18,4 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/", api.urls),
 ]
-print(
-    "Life is Tooooooooooooooooooooooooooooooooooooooooooo Short"
-)
+print("Life is Tooooooooooooooooooooooooooooooooooooooooooo Short")
